@@ -12,7 +12,7 @@ function Key({keyValue, bigKey}) {
             onSelectLetter(keyValue)
         }
     }
-    const keyClass = bigKey ? 'border-2 border-black rounded-lg w-16 h-8 m-0.5 md:w-20 md:h-10 md:m-1' : 'border-2 border-black rounded-lg w-8 h-8 m-0.5 md:w-10 md:h-10 md:m-1 '
+    const keyClass = bigKey ? 'border-2 border-black rounded-lg w-16 h-12 m-0.5 md:w-20 md:h-10 md:m-1 dark:text-white' : 'border-2 border-black rounded-lg w-8 h-12 m-0.5 md:w-10 md:h-10 md:m-1 dark:text-white'
   return (
     <button className={keyClass} onClick={selectLetter}>{keyValue}</button>
   )
