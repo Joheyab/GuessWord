@@ -4,7 +4,7 @@ import Square from "./Square";
 
 function Board() {
   return (
-    <div className="dark:bg-gray-900 px-10 py-5 rounded-md">
+    <div className="dark:bg-gray-900 px-2 py-2 md:px-10 md:py-5 rounded-md">
       <div className="flex">
         <Square letterPos={0} attemptVal={0} />
         <Square letterPos={1} attemptVal={0} />
