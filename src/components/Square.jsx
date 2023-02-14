@@ -16,7 +16,7 @@ function Square({ letterPos, attemptVal }) {
   (correct ? class1 : almost ? class2 : class3);
   return (
     <div
-      className={letterState} id="normal"
+      className={letterState === false ? "" : letterState} id="normal"
     >
       {letter}
     </div>
