@@ -7,14 +7,16 @@ function Square({ letterPos, attemptVal }) {
 
   const correct = wordPlay[letterPos] === letter
   const almost = !correct&& letter !== "" && wordPlay.includes(letter)
-
+  const class1 = "block border-2 m-1 bg-[green] text-center border-black md:w-16 md:h-16 rounded md:text-5xl dark:text-white sm:w-14 sm:h-14 sm:text-4xl"
+  const class2 = "block border-2 m-1 bg-[#ffff0094] text-center border-black md:w-16 md:h-16 rounded md:text-5xl dark:text-white sm:w-14 sm:h-14 sm:text-4xl"
+  const class3 = "block border-2 m-1 bg-[#2c2a2a] text-center border-black md:w-16 md:h-16 rounded md:text-5xl dark:text-white sm:w-14 sm:h-14 sm:text-4xl"
 
   const letterState = 
   currentAttempt.attempt > attemptVal &&
-  (correct ? "green" : almost ? "#ffff0094" : "#2c2a2a");
+  (correct ? class1 : almost ? class2 : class3);
   return (
     <div
-      className={`block bg-[${letterState}] border-2 m-1 text-center border-black md:w-16 md:h-16 rounded md:text-5xl dark:text-white sm:w-14 sm:h-14 sm:text-4xl`}
+      className={letterState} id="normal"
     >
       {letter}
     </div>

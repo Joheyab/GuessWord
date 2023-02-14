@@ -66,10 +66,7 @@ function GamePage() {
       });
   };
 
-  const resetBoard = () => {
-    setCurrentAttempt({attempt: 0, letterPos: 0})
-    setBoard(board)
-  }
+  
   useEffect(() => {
     getWordToPlay();
   }, [wordPlay]);
