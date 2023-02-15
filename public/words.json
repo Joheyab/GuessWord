@@ -10,5 +10,33 @@
     {
         "ID:":3,
         "Word": "block"
+    },
+    {
+        "ID":4,
+        "Word": "adult"
+    },
+    {
+        "ID":5,
+        "Word": "write"
+    },
+    {
+        "ID":6,
+        "Word": "phone"
+    },
+    {
+        "ID":7,
+        "Word": "video"
+    },
+    {
+        "ID":8,
+        "Word": "music"
+    },
+    {
+        "ID":9,
+        "Word": "water"
+    },
+    {
+        "ID":10,
+        "Word": "house"
     }
 ]
